@@ -225,7 +225,7 @@ $qterm = $_GET['q'] ?? '';
 
 $sql = "SELECT 
             p.*, 
-            GROUP_CONCAT(m.nama_menu SEPARATOR ', ') AS daftar_menu
+            GROUP_CONCAT(m.nama_menu,' ', dp.qty, 'x' SEPARATOR ', ') AS daftar_menu
         FROM pesanan p
         LEFT JOIN detail_pesanan dp ON p.id_pesanan = dp.id_pesanan
         LEFT JOIN menu m ON dp.id_menu = m.id_menu";
@@ -256,7 +256,6 @@ while ($p = mysqli_fetch_assoc($res)) :
 
         <td style="line-height: 1.5;">
             <?= $p['daftar_menu'] ?>
-            <?= !empty($p['daftar_menu']) ? $p['daftar_menu'] : '<i style="color:#aaa; font-size:12px;">(Menu belum diinput)</i>' ?>
         </td>
 
         <td class="price">

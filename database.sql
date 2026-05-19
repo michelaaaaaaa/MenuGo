@@ -87,7 +87,7 @@ INSERT INTO detail_pesanan (id_pesanan,id_menu,qty,harga,subtotal) VALUES
 (6,10,2,15000,30000),(6,5,1,20000,20000);
 
 -- Tambahan data transaksi untuk membuat grafik batang naik/turun sesuai data database
-INSERT INTO pesanan (kode_pesanan,nama_pelanggan,no_meja,tanggal,status_pesanan,metode_bayar,total) VALUES
+INSERT INTO pesanan (kode_pesanan,nama_pelanggan,nomor_meja,tanggal,status_pesanan,metode_bayar,total) VALUES
 ('#MG-0038','Budi',8,'2026-05-16 13:20:00','Selesai','QRIS',102000),
 ('#MG-0037','Lala',9,'2026-05-15 12:15:00','Selesai','Cash',74000),
 ('#MG-0036','Mira',10,'2026-05-14 17:05:00','Selesai','QRIS',46000),

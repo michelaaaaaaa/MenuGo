@@ -251,7 +251,7 @@ while ($p = mysqli_fetch_assoc($res)) :
         </td>
 
         <td>
-            <b><?= $p['no_meja'] ?></b><br>
+            <b><?= $p['nomor_meja'] ?></b><br>
         </td>
 
         <td style="line-height: 1.5;">

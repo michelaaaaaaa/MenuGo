@@ -39,7 +39,7 @@ CREATE TABLE pesanan (
   status_pesanan ENUM('Diterima','Diproses','Selesai','Dibatalkan') DEFAULT 'Diterima',
   metode_bayar ENUM('Cash','QRIS') DEFAULT 'Cash',
   total INT NOT NULL DEFAULT 0,
-  no_meja INT,
+  nomor_meja INT,
 );
 
 CREATE TABLE detail_pesanan (

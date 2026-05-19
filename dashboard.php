@@ -211,7 +211,7 @@ if ($maxTop <= 0) {
       </td>
 
       <td>
-        <b><?= htmlspecialchars($p['no_meja']) ?></b>
+        <b><?= htmlspecialchars($p['nomor_meja']) ?></b>
         <br>
         <small><?= date('H:i', strtotime($p['tanggal'])) ?></small>
       </td>
